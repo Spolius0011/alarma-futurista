@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('futuristic-background.jpg'); 
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Esto mantiene los elementos centrados */
+    align-items: center;
+    height: 100vh; /* Altura total de la ventana */
+    color: #fff;
+}
+
+
+.container {
+    text-align: center;
+    flex-grow: 1; /* Asegura que el contenedor ocupe el espacio disponible */
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos dentro se alineen en columna */
+    justify-content: center; /* Centra los elementos verticalmente */
+}
+/* Estilo existente... */
+
+/* Estilo existente... */
+
+footer {
+    position: fixed; /* Permite que el footer permanezca en su lugar */
+    bottom: 10px; /* Distancia desde el borde inferior */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+    text-align: center; /* Centra el texto dentro del footer */
+    color: #ffffff; /* Color del texto */
+    font-size: 1rem; /* Tamaño de la fuente */
+    text-shadow: 1px 1px 2px #00ffff; /* Sombra del texto para mayor legibilidad */
+}
+
+#currentDate {
+    margin-bottom: 20px; /* Aumentamos el margen inferior para separar del autor */
+    color: #fcfcfc; /* Color de la fecha */
+    text-shadow: 2px 2px 4px #00ffff; /* Contorno azul cian */
+    font-size: 2rem; /* Hacemos la fecha un poco más grande */
+}
+
+#author {
+    position: fixed; /* Mantiene el texto en su lugar */
+    bottom: 10px; /* Distancia desde el borde inferior */
+    right: 10px; /* Distancia desde el borde derecho */
+    color: #ffffff; /* Color del texto */
+    font-size: 1rem; /* Tamaño de la fuente */
+    text-shadow: 1px 1px 2px #00ffff; /* Sombra del texto para mayor legibilidad */
+}
+
+#student {
+    position: fixed; /* Mantiene el texto en su lugar */
+    bottom: 10px; /* Distancia desde el borde inferior */
+    left: 10px; /* Distancia desde el borde izquierdo */
+    color: #ffffff; /* Color del texto */
+    font-size: 1rem; /* Tamaño de la fuente */
+    text-shadow: 1px 1px 2px #00ffff; /* Sombra del texto para mayor legibilidad */
+}
+
+
+
+/* Reloj con contorno azul y números blancos */
+.clock {
+    font-size: 12rem;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px #00ffff; /* Contorno azul cian */
+    font-weight: bold;
+}
+
+/* Contenedores de alarma y temporizador centrados y con fondo negro translúcido */
+.alarms {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; /* Mantén este ancho */
+    padding: 30px;
+    border-radius: 50px;
+    margin: auto; /* Asegúrate de centrar el contenedor */
+}
+
+
+.alarm, .timer {
+    background-color: rgb(43, 40, 40); /* Fondo negro translúcido */
+    text-shadow: 2px 2px 4px #00ffff; /* Contorno azul cian */
+    padding: 20px;
+    border-radius: 15px;
+    width: 45%;
+    /* Eliminamos el sombreado */
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 2rem; /* Aumentamos el tamaño del texto de los títulos */
+    color: #ffffff; /* Título en cian */
+}
+
+/* Input y botones centrados y más grandes */
+input, button {
+    padding: 15px; /* Aumentamos el padding para que los botones sean más grandes */
+    margin-bottom: 20px;
+    width: 100%;
+    border: center;
+    border-radius: 15px;
+    font-size: 1.5rem; /* Aumentamos el tamaño de la letra */
+    text-align: center; /* Centramos el texto dentro del botón */
+}
+
+button {
+    background-color: #00ffff; /* Botón cian */
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.3rem; /* Hacemos el texto de los párrafos más grande */
+    color: white;
+}
+
+/* Ajuste de la fecha */
+#currentDate {
+    margin-top: 20px;
+    color: #fcfcfc;
+    text-shadow: 2px 2px 4px #00ffff; /* Contorno azul cian */
+    font-size: 2rem; /* Hacemos la fecha un poco más grande */
+}

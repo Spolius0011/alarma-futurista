@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despertador Futurista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="clock" class="clock">23:21:05</div>
+        <div class="alarms">
+            <div class="alarm">
+                <h2>Alarma</h2>
+                <input type="time" id="alarmTime">
+                <button id="setAlarm">Establecer Alarma</button>
+                <p id="alarmStatus">Alarma no establecida</p>
+            </div>
+            <div class="timer">
+                <h2>Temporizador</h2>
+                <input type="number" id="timerMinutes" placeholder="Minutos">
+                <button id="startTimer">Iniciar</button>
+                <p id="timerDisplay">00:00</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p id="currentDate">8/8/2024</p>
+        <p id="author">Autor: Tiago Torres</p>
+        <p id="student">Leonidas Rubio Villegas 10-3</p> <!-- Nombre del estudiante agregado -->
+    </footer>
+    
+    <!-- Elementos de audio para la alarma y el temporizador -->
+    <audio id="alarmSound" src="alarma.mp3" preload="auto"></audio>
+    <audio id="timerSound" src="temporizador.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
